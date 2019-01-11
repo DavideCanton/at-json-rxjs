@@ -1,6 +1,6 @@
 {
   "name": "at-json-rxjs",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A declarative mapper to and from JSON.",
   "main": "dist/lib/index.js",
   "types": "dist/lib/index.d.ts",
