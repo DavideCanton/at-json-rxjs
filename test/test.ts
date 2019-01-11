@@ -1,8 +1,7 @@
 import { JsonClass, JsonProperty, SerializeFn } from 'at-json';
 import { expect } from 'chai';
 import { of } from 'rxjs';
-
-import { mapModel, mapModelArray } from '../lib';
+import { mapJsonModel, mapJsonArray } from '../lib';
 
 @JsonClass(true)
 class Address {
@@ -22,7 +21,7 @@ describe('tests', () => {
             line2: 'b'
         };
 
-        of(obj).pipe(mapModel(Address)).subscribe(v => {
+        of(obj).pipe(mapJsonModel(Address)).subscribe(v => {
             expect(v).to.be.instanceOf(Address);
             expect(v.line1).to.equal(obj.line1);
             expect(v.line2).to.equal(obj.line2);
@@ -43,7 +42,7 @@ describe('tests', () => {
 
         const d = [obj, obj2];
 
-        of(d).pipe(mapModelArray(Address)).subscribe(a => {
+        of(d).pipe(mapJsonArray(Address)).subscribe(a => {
             expect(a).to.be.instanceOf(Array);
 
             a.forEach((v, i) => {
