@@ -1,43 +1,46 @@
 {
-  "name": "at-json-rxjs",
-  "version": "0.0.3",
-  "description": "A declarative mapper to and from JSON.",
-  "main": "dist/lib/index.js",
-  "types": "dist/lib/index.d.ts",
-  "scripts": {
-    "build": "tsc",
-    "test": "mocha -r ts-node/register -R spec test/**/test.ts"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/DavideCanton/at-json-rxjs.git"
-  },
-  "keywords": [
-    "json",
-    "mapper",
-    "rxjs"
-  ],
-  "author": "Davide Canton",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/DavideCanton/at-json/issues"
-  },
-  "homepage": "https://github.com/DavideCanton/at-json#readme",
-  "dependencies": {
-    "at-json": "^0.0.19",
-    "rxjs": "^6.0.0"
-  },
-  "devDependencies": {
-    "@types/chai": "^4.1.4",
-    "@types/chai-spies": "^1.0.0",
-    "@types/lodash": "^4.14.117",
-    "@types/mocha": "^5.2.5",
-    "@types/node": "^10.5.7",
-    "chai": "^4.1.2",
-    "chai-spies": "^1.0.0",
-    "mocha": "^5.2.0",
-    "ts-node": "^7.0.0",
-    "tslint": "^5.11.0",
-    "typescript": "^3.0.1"
-  }
+    "name": "at-json-rxjs",
+    "version": "0.0.4",
+    "description": "A declarative mapper to and from JSON.",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "scripts": {
+        "build": "tsc",
+        "test": "mocha -r ts-node/register -R spec test/**/test.ts"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/DavideCanton/at-json-rxjs.git"
+    },
+    "keywords": [
+        "json",
+        "mapper",
+        "rxjs"
+    ],
+    "author": "Davide Canton",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/DavideCanton/at-json/issues"
+    },
+    "homepage": "https://github.com/DavideCanton/at-json#readme",
+    "dependencies": {
+        "at-json": "0.0.20",
+        "rxjs": "^6.0.0"
+    },
+    "peerDependencies": {
+        "at-json": "^0.0.19"
+    },
+    "devDependencies": {
+        "@types/chai": "^4.1.4",
+        "@types/chai-spies": "^1.0.0",
+        "@types/lodash": "^4.14.117",
+        "@types/mocha": "^5.2.5",
+        "@types/node": "^10.5.7",
+        "chai": "^4.1.2",
+        "chai-spies": "^1.0.0",
+        "mocha": "^5.2.0",
+        "ts-node": "^7.0.0",
+        "tslint": "^5.11.0",
+        "typescript": "^3.0.1"
+    }
 }

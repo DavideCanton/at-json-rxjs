@@ -1,0 +1,6 @@
+lib/
+test/
+.vscode/
+.travis.yml
+tsconfig.json
+tslint.json
