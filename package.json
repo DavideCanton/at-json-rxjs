@@ -1,6 +1,6 @@
 {
     "name": "at-json-rxjs",
-    "version": "0.0.5",
+    "version": "0.0.6",
     "description": "A declarative mapper to and from JSON.",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
@@ -24,11 +24,10 @@
     },
     "homepage": "https://github.com/DavideCanton/at-json#readme",
     "dependencies": {
-        "at-json": "0.0.20",
         "rxjs": "^6.0.0"
     },
     "peerDependencies": {
-        "at-json": "^0.0.19"
+        "at-json": ">=0.0.24"
     },
     "devDependencies": {
         "@types/chai": "^4.1.4",
